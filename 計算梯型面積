@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip> 
+
+using namespace std;
+
+int main() {
+    
+    double a, b, h;
+    
+    // 輸入上底、下底和高
+    
+    cin >> a;
+    
+    cin >> b;
+    
+    cin >> h;
+    
+    // 計算梯形面積
+    double area = (a + b) * h / 2.0;
+    
+    // 設置輸出精度並輸出結果
+    cout << fixed << setprecision(1);
+    cout << "Trapezoid area:" << area << endl;
+    
+    return 0;
+}
