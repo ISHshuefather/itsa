@@ -1,0 +1,14 @@
+#include<iostream>
+#include <iomanip> 
+#include <cstdio>
+using namespace std;
+int main(){
+    int s,h;
+    double area;
+    cin >> s >> h;
+    area=(s*h)/2.0;
+    printf("Triangle area:%.1f\n", area);
+    
+
+
+}
