@@ -1,0 +1,22 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+    int ten = 0, five = 0, one = 0;
+    int sum;
+    cin >> sum;
+    while (sum >= 10)
+    {
+        sum = sum - 10;
+        ten++;
+    }
+    while (sum >= 5)
+    {
+        sum = sum - 5;
+        five++;
+    }
+    cout << "NT10=" << ten << endl
+         << "NT5=" << five << endl
+         << "NT1=" << sum << endl;
+}
