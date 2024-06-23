@@ -1,0 +1,13 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+    double BMI;
+    double w,h;
+    cin >> w >> h;
+    h=h/100;
+    BMI=w/h/h;
+    cout << fixed << setprecision(2);
+    cout << BMI << endl;
+}
