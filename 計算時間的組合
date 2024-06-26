@@ -2,12 +2,22 @@
 using namespace std;
 
 int main() {
+    // 宣告一個整數變數來存儲秒數
     int seconds;
+    
+    // 從標準輸入讀取秒數
     cin >> seconds;
 
+    // 計算並輸出天數
     cout << seconds / 86400 << " days" << endl;
+    
+    // 計算並輸出剩餘的小時數
     cout << (seconds % 86400) / 3600 << " hours" << endl;
+    
+    // 計算並輸出剩餘的分鐘數
     cout << (seconds % 3600) / 60 << " minutes" << endl;
+    
+    // 計算並輸出剩餘的秒數
     cout << seconds % 60 << " seconds" << endl;
 
     return 0;
