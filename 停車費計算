@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int startHour,startMin,endHour,endMin;
+    cin >> startHour >> startMin >> endHour >> endMin;
+    int totalMin;
+    totalMin=(startHour-endHour)*60+endMin-startMin;
+    int money;
+    if(totalMin<=120){
+        money=(totalMin/30)*30;
+    }
+    else if(totalMin>120&&totalMin<240){
+        money=120+(totalMin/30)*40;
+    }
+    else if(totalMin>240){
+        
+        
+        
+        
+    }
+}
