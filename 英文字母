@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char a;
+    cin >> a; 
+
+    
+    char lower_a = tolower(a);
+
+    
+    if (lower_a == 'a' || lower_a == 'e' || lower_a == 'i' || lower_a == 'o' || lower_a == 'u') {
+        cout << "母音" << endl;
+    } else {
+        cout << "子音" << endl;
+    }
+
+    return 0;
+}
