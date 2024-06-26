@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    int x,y;
+
+    cin >> a >> b >> c;
+    cin >> x >> y;
+    if ((a*x+b*y+c)==0)
+    {
+        cout << "YES" << endl;
+    }
+    else {
+        cout << "NO" << endl;
+    }
+
+    
+}
