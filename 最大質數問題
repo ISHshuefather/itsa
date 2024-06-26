@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n; // 
+
+    int flag = 1; // 宣告一個標記變數，用於判斷是否找到質數
+
+    // 從 n-1 開始向下遞減尋找最大的質數
+    for (int i = n - 1; i > 1; i--) {
+        flag = 1; 
+
+        // 內部迴圈檢查是否為質數
+        for (int j = 2; j < i; j++) {
+            if (i % j == 0) {
+                flag = 0; // 如果 i 能被 j 整除，則將 flag 設置為 0，表示不是質數
+                break; // 跳出內部迴圈，不再檢查更大的 j
+            } else {
+                flag = 1; // 如果 i 不能被 j 整除，則保持 flag 為 1，繼續檢查下一個 j
+            }
+        }
+
+        
+        if (flag == 1) {
+            cout << i << endl;  
+            break; 
+        }
+    }
+
+    return 0;
+}
