@@ -1,0 +1,19 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+    int time, salary;
+    cin >> time >> salary;
+
+    if (time <= 60) {
+        cout << fixed << setprecision(1) << time * salary / 1.0 << endl;
+    } else if (time > 60 && time <= 120) {
+        cout << fixed << setprecision(1) << ((60 * salary + (time - 60) * salary * 1.33) * 1.0) / 1.0 << endl;
+    } else {
+        cout << fixed << setprecision(1) << ((60 * salary + 60 * salary * 1.33 + (time - 120) * 1.66 * salary) * 1.0) / 1.0 << endl;
+    }
+
+    return 0;
+}
