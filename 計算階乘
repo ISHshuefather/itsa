@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+void factorialCalculate(int factorial){
+    long long int sum=1;
+    while (factorial>1)
+    {
+        sum=sum*factorial;
+        factorial--;
+    }
+    cout << sum << endl;
+
+
+
+}
+int main() {
+    int n,factorial;
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> factorial;
+        factorialCalculate(factorial);
+    }
+    
+}
